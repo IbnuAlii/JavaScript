@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment Counter</title>
+
+    <style>
+        #num1,#num2,#num1m,#num2m,#num1s,#num2s,#num1d,#num2d{
+            border-color: beige;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #demo2,#demo2m,#demo2s,#demo2d{
+            background-color: antiquewhite;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        button{
+            color: aliceblue;
+            background-color: rgb(83, 36, 251);
+            border-color: beige;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<h1> Sum of two Numbers </h1>
+<body>
+    <h3>Addition</h3>
+   <input id="num1" type="text" size="10px" placeholder="enter num1">
+   <input id="num2" type="text" size="10px" placeholder="enter num2"><br><br>
+   <button onclick="sum()">+</button>
+   =
+   <input id= "demo2" type="button" value="">
+    <br><br>
+
+
+    <!-- Substraction -->
+    <h3>Suntraction</h3>
+   <input id="num1s" type="text" size="10px" placeholder="enter num1">
+   <input id="num2s" type="text" size="10px" placeholder="enter num2"><br><br>
+   <button onclick="Subtract()">-</button>
+   =
+   <input id= "demo2s" type="button" value="">
+   <br><br>
+
+    <!-- multiply -->
+    <h3>Multiplication</h3>
+   <input id="num1m" type="text" size="10px" placeholder="enter num1">
+   <input id="num2m" type="text" size="10px" placeholder="enter num2"><br><br>
+   <button onclick="multiply()">x</button>
+   =
+   <input id= "demo2m" type="button" value="">
+   <br><br>
+
+    <!-- Division -->
+    <h3>Division</h3>
+   <input id="num1d" type="text" size="10px" placeholder="enter num1">
+   <input id="num2d" type="text" size="10px" placeholder="enter num2"><br><br>
+   <button onclick="Divide()">÷</button>
+   =
+   <input id= "demo2d" type="button" value="">
+
+
+    <script>
+        // Addtion
+        function sum(){
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let sum = parseInt(num1) + parseInt(num2);
+            document.getElementById("demo2").value = sum;
+
+        }
+
+
+        function Subtract(){
+            let num1s = document.getElementById("num1s").value;
+            let num2s = document.getElementById("num2s").value;
+            let Subtract = parseInt(num1s) - parseInt(num2s);
+            document.getElementById("demo2s").value = Subtract;
+    }
+
+        
+        // Multiplication
+        function multiply(){
+            let num1m = document.getElementById("num1m").value;
+            let num2m = document.getElementById("num2m").value;
+            let multiply = parseInt(num1m) * parseInt(num2m);
+            document.getElementById("demo2m").value = multiply;
+
+        }
+
+        //division
+        function Divide(){
+            let num1d = document.getElementById("num1d").value;
+            let num2d = document.getElementById("num2d").value;
+            let Divide = parseInt(num1d) / parseInt(num2d);
+            document.getElementById("demo2d").value = Divide;
+
+        }
+
+    </script>
+</body>
+</html>

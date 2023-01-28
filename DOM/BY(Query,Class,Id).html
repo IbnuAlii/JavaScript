@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query select All</title>
+</head>
+<body>
+    <p>And if you go chasing
+        <span class="animal">rabbits</span></p>
+
+        <p>And you know you're going to fall</p>
+
+        <p>Tell 'em a <span id="character">hookah smoking
+        <span class="animal">caterpillar</span></span></p>
+
+        <p>Has given you the call</p>
+
+    <script>
+
+        let byclass = document.querySelector(".animal");
+        let byId = document.querySelector("#character");
+        let byTagName = document.querySelector("p");
+        byclass.style.color = '#8DE3BC';
+        byId.style.background = "green";
+        byTagName.style.background = "#yellow"
+</script>
+
+</body>
+</html>

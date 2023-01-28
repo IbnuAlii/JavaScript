@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> assigment 3</title>
+</head>
+<body>
+    <h2 style="color: blue;">Assigment 3</h2><hr style="color: red;">
+
+
+    <h1 id="demo">Jamhuriya University - Faculty of IT</h1>
+    <h1 id="demo">Jamhuriya University - Faculty of BA</h1>
+    <h1 id="demo">Jamhuriya University - Faculty of ENG</h1>
+    <button onclick="CountParagraph()">Count</button>
+
+    
+
+    <script>
+        function CountParagraph(){
+            let paragraphs= document.getElementsByTagName("h1");
+            
+            for(let i=0; i<paragraphs.length; i++)
+            {
+                paragraphs[i].style.fontFamily="poppins"
+                paragraphs[i].style.textShadow="10px 10px 1px #e5cb09d9";
+            }
+            // document.write("total paragraphs are: ",paragraphs.length)
+        }
+        document.write("total paragraphs are: ",paragraphs.length)
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY class name</title>
+</head>
+<body>
+    <h1 class="demo">Welcome to 1st paragraph</h1>
+    <h2 class="demo">Welcome to 2nd paragraph</h2>
+    <h3 class="demo">Welcome to 3rd paragraph</h3>
+    <h4 class="demo">Welcome to 4h paragraph</h4>
+    <h5 class="demo">Welcome to 5th paragraph</h5>
+    <h6 class="demo">Welcome to 6th paragraph</h6>    
+
+    <script>
+        let headings= document.querySelectorAll(".demo");
+        for(let i=0; i<headings.length; i++) {
+            headings[i].style.fontSize = "2rem";                
+            headings[i].style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>
+
+
+

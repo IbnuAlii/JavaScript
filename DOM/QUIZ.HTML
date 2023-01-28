@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first dom</title>
+</head>
+<body>
+    <!--Access HTML document-->
+    <input id="Name1" type="text"  placeholder="enter Your 1st Name">
+    <input id="Name2" type="text"  placeholder="enter Your 2nd Name">
+    <br><br>
+    <input id= "demo2" type="button" value="">
+    <br><br>
+    <button onclick="clikck()"> Click me</button>
+    <script>
+        function clikck(){
+
+        let name1 = document.getElementById("Name1").value;
+        let name2 = document.getElementById("Name2").value;
+        let Full_name = name1 + name2;
+            document.getElementById("demo2").value = Full_name;
+        // console.log(name1.textContent);
+    }
+    </script>
+</body>
+</html>

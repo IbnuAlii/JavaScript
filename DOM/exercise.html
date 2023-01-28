@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY tag name</title>
+</head>
+<body>
+    <img src="p1 (1).jpg" alt="">
+    <img src="p2.webp" alt="">
+    <img src="p3.jpg" alt="">
+    <button onclick="CountImages()">Count</button>
+
+
+    <script>
+        function CountImages(){
+            let images= document.getElementsByTagName("img")
+            document.write("total images are: ",images.length)
+        }
+    </script>
+</body>
+</html>

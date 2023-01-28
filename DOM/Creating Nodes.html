@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Given: -->
+    <div>
+        <span id="childSpan">foo bar</span>
+    </div>
+    <script>
+        // Create an empty element node -->
+        // without an ID, any attributes, or any content -->
+        var sp1 = document.createElement("span");
+        // Give it an id attribute called 'newSpan'
+        sp1.id = "newSpan";
+        // Create some content for the new element.
+        var sp1_content = document.createTextNode("new replacement span element.");
+        // Apply that content to the new element
+        sp1.appendChild(sp1_content);
+        
+        // Build a reference to the existing node to be replaced
+        var sp2 = document.getElementById("childSpan");
+        var parentDiv = sp2.parentNode;
+        // Replace existing node sp2 with the new span element sp1
+        parentDiv.replaceChild(sp1, sp2);
+
+        console.log(sp2,parentDiv)
+
+
+        // PART 2
+        var newelement = document.createElement("h1")
+        newelement.id = "newelement";
+        document.body.appendChild(newelement)
+        newelement.appendChild(document.createTextNode("Hello World"))
+
+       
+
+        // PART 3
+
+        for (i =0 ; i < 3; i++){
+            let element = document.createElement("p");
+            element.id = "element" + i;
+            document.body.appendChild(element);
+            element.appendChild(document.createTextNode("Hello I am element" + i));
+        }
+        let remove = document.getElementById("element2");
+        document.body.removeChild(remove)
+
+        
+    </script>
+    
+
+
+</body>
+</html>

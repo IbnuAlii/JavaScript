@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY tag name</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+        body {
+            font-family: "poppins";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    
+    <script>
+        function count(selector) {
+            return document.querySelectorAll(selector).length;
+        }
+        document.write("There are " + count("input") + " input tags in the page")
+    </script>
+</body>
+</html>

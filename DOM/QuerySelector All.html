@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY class name</title>
+</head>
+<body>
+    <p class="demo">Welcome to first paragraph</p>
+    <p class="demo">Welcome to second paragraph</p>
+    <p class="demo">Welcome to third paragraph</p>
+    <p class="demo">Welcome to fourth paragraph</p>
+    <p id="demo">Welcome to fourth paragraph</p>
+    <button onclick="CountParagraph()">Count</button>
+
+    
+
+    <script>
+        function CountParagraph(){
+            let paragraphs= document.querySelectorAll(".demo");
+            for(let i=0; i<paragraphs.length; i++)
+            {
+                paragraphs[i].style.color="white";
+                paragraphs[i].style.fonSize="25px";
+                paragraphs[i].style.backgroundColor="black";
+            }
+            // document.write("total paragraphs are: ",paragraphs.length)
+        }
+        document.write("total paragraphs are: ",paragraphs.length)
+    </script>
+</body>
+</html>
+
+
+
