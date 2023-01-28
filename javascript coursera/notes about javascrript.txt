@@ -1,0 +1,291 @@
+Array
+======
+
+array: Is A container with sub-container
+example
+var colors1= New Array ("Red","green","blue");
+colors1[0]; // the number 0 indecates the index. so the output will disply "Red", because the red elemnet is at the index 0 of the array
+
+aslo here other helpful examples:
+var colors2 = ["yellow","orange","purple"];
+color2[2]; // the number 2 also indecates the index number.
+
+if i want to know the length of the array what should i do?
+	simply you do this:
+	variableName.length;
+	example: colors2.legth;
+
+
+Question?
+Given this array;
+
+var vehicles = ["Ford", ["Fiesta", "Taurus", "Explorer"], "Honda", ["Pilot", "Civic", "Accord"], "Toyota", ["Corolla", "Camry", "Prius"]];var vehicles = ["Ford", ["Fiesta", "Taurus", "Explorer"], "Honda", ["Pilot", "Civic", "Accord"], "Toyota", ["Corolla", "Camry", "Prius"]];
+
+	how do i desplay the Ford Fiesta ?
+
+===>> vehicles [1][0];
+
+
+Question
+
+What value will the following variable hold?
+var myCar = vehicles[2];
+
+Given that vehicles holds the following array:
+var vehicles = 
+    ["Ford" ["Fiesta", "Taurus", "Explorer"] ],
+    ["Honda" ["Pilot", "Civic", "Accord"] ],
+    ["Toyota" ["Corolla", "Camry", "Prius"] ];
+
+“Pilot”
+“Honda Pilot”
+“Honda”  	===>> it will hold "Honda".
+“Ford”;
+
+
+Question
+
+Which of the following are array methods? Select all that apply.​
+
+array.delete();;
+array.push();		
+	Correct
+	This adds an element to an array.​
+array.splice();		
+	Correct
+	This pulls one or more elements from an array.​
+
+array.sort();;		
+	Correct
+	This sorts elements in an array alphabetically.
+
+
+
+ARRAY PRACTICE
+==============
+var animals = ['cat','dog','chicken'];
+animals.length;  //so the length od this array should be 3
+
+if i want to add an element to the array _animals_ what should i do?
+	i should use this syntax to do that:
+	animals.push("here you will put the element you want to add in your array jus like a "lion",)
+
+if i want to remove an element from the array also what should i do?
+	i should use this syntax to do that:
+	animals.splice(1,1)("here you will put the element you want to remove from your array jus like a "lion",)
+	===>> note animals.splice(1,1) ===>(1,1) indecates the index.
+
+another important method u will need is sort , now if you want to sort elemnt in an array just it's simple:
+	you will follow this syntax:
+	animals.sort();
+
+as you know if there is an array that holds 4 element; 
+how could you always get the last element in an array?
+what would be the code i would type in here that would always give me the final element in an array? 
+	it's very simple; so, here is what i would do:
+	animals[animals.length-1]
+
+
+
+
+JAVASCRIPT OPERATORS
+=====================
++ , = , - , * , / 
+
+
+
+
+
+BOOLEANS IN JAVASCRIPT
+=======================
+in javascript you can assign boolean like so:
+var happy = true;
+var sad = false;
+you can check to see if somethingis true or not by using a selection statement:
+
+if (happy) {
+	// do something if happy is true..
+}
+
+else{
+     // do something if happy is false..
+}
+
+
+
+example:
+<script>
+   var red = true;
+   var blue = false;
+   
+   if ( red ) {
+      console.log("The statement is true");
+   }
+   else {
+      console.log("The statement is false!");
+   }
+</script>
+
+
+JavaScript treats variables that are undefined as false.
+========================================================
+
+<script>
+   var red = true;
+   var blue = false;
+   var green=;	// this is undefined value so, the result will be false.
+   
+   if ( green) {
+      console.log("The statement is true");
+   }
+   else {
+      console.log("The statement is false!");
+   }
+</script>
+
+Also oops, green equals null, that would be false.
+green equals 0, 0 is false.
+all number are true in javascript except for zero, zero is falsy.
+So things that we know are false or undefined is false, null is false, zero is false. False is false and NaN is false. Other things are true. But if I put "Cheese" Cheese is true. So that's a very interesting thing about JavaScript.
+
+
+comparing valuse
+================
+
+<	less than
+>	greater than.
+==  this operator called same as or equals.    ("5" == 5 	this statement is "true" because it allows for something called type coercion.)
+
+===	exactly the same as  ( "5" === 5  this satatement will be "false" because we use the trible equal which is exactly the same as and that won't do type coercion.  )
+	________________________________________________________________________________________________________________________
+	|**Type Coercion refers to the process of automatic or implicit conversion of values from one data type to another. This 	includes conversion from Number to String, String to Number, Boolean to Number etc.
+_________________________________________________________________________________________________________________________________
+
+!=  this operator called not the same as or not equals.
+!== 	not exactly the same as
+
+<script>
+   var red = true;
+   var blue = false;
+   var green=;	// this is undefined value so, the result will be false.
+   
+   var myNum = 5
+   var myOtherNum = 5
+
+   if ( myNum == myOtherNum ){
+      console.log("The statement is true");       // the output will be true.
+   }
+   else {
+      console.log("The statement is false!");
+   }
+</script>
+
+
+Else if
+========
+
+var colors=["Red","Green","Blue","Yellow"];
+var selectedColors =colors[3]
+if (selectedColors == 'Red'){
+console.log("The color is Red")
+}
+else if (selectedColors == 'Green'){
+console.log("The color is Green")
+}
+else if (selectedColors == 'Blue'){
+console.log("The color is Blue")
+}
+else {
+console.log("The color is Yellow")
+}
+
+
+
+Switch
+======
+var colors=["Red","Green","Blue","Yellow"];
+        //var selectedColors =colors[Number(prompt("enter a value 0 to 3: "))];
+        var selectedColors =colors[0];
+
+        switch(selectedColors){
+        case "red": console.log("the color is red"); break;
+        case "Green": console.log("the color is Green"); break;
+        case "Blue": console.log("the color is Blue"); break;
+        case "Yellow": console.log("the color is Yellow"); break;
+        default: console.log("there was an error!");
+        }
+
+
+Using && Operator (Umpersand Operator)
+================= ====================
+
+&& -this operator Known as Umpersand Operator.
+this works only when the both satements are true.
+
+example
+=======
+var goodMood = true;
+var gotSleep = true;
+if (goodMood && gotSleep){
+console.log("today is a good day");
+}
+else{
+console.log("I am grumpy")
+}
+
+Using || Operator  (Double Pipe Operator)
+=================  ======================
+
+use the double pipe (||) characters to check to see if any of the satmements in the if selector are true. if any of them are the whole statement is true.
+	-the pipe character works like "Or" statement-.
+
+
+
+=======================================================
+LOOP
+=======================================================
+   _________
+ * For Loop.
+   _________
+
+for loop is the most basic loop in javaScript. 
+you use a loop to repeat a set of steps for a set numbers of items.
+
+example
+___________________________
+for (var i=0; i<10; i++){
+      console.log(i);
+}___________________________
+
+*  i=0;  initializes the counter
+*  i<10; Condition
+*  i<10; Increment
+
+Working with Arrays
+===================
+
+zero is the most common initial value because you will be frequently working with arrays, whichare zero indexed.
+
+var colors=['Red','Green','Blue','Orange'];
+for (i=0; i<4; i++){
+   console.log(colors[i])
+}
+_____________________________________________________________
+using colors.length is the most general way so let us use it.
+-------------------------------------------------------------
+var colors=['Red','Green','Blue','Orange','Yellow','Purple'];
+for (i=0; i<colors.length; i++){
+   console.log(colors[i])
+}
+
+
+* The for ..of loop
+====================
+the for of loop is specially for workig with arrays.
+
+example.
+_______________________________________________
+var food= ["grapes","cheese","bread","olives"];
+for ( var eachItem of food ){
+console.log(eachItem);
+}______________________________________________

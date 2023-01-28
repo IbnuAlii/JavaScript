@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        function upperMessage (message){
+            var upper = message.toUpperCase();
+            console.log(upper)
+        }
+        //upperMessage("my name is mohamed ali nor adam")
+
+        function sum(num1,num2){
+            var sum = num1 + num2;
+            console.log(sum);
+        };
+        //sum(345 , 456)
+
+        //return
+        function returnSum(num1,num2){
+            var sum = num1 + num2;
+            return sum;
+        }
+        //console.log(returnSum(10,10));
+
+        // random
+
+        // console.log(Math.random());
+        //these random numbers start from 0.00000000000000 upto 0.9999999999999999.
+        function randomInt(min, max){
+            // var numOfValues = max - min + 1;
+            //console.log(numOfValues)
+        }
+        //randomInt(5,10);
+
+
+        // Generate a random number between 0 and 1 then multiply that with the number of possible values,
+        // function randoms(min, max){
+        //     var numOfValues = max - min + 1;
+        //     console.log(numOfValues)
+        //     var randomNum = Math.random();
+        //     var randomVal = randomNum * numOfValues;
+        //     console.log(randomVal)
+        // }
+        // randoms(5,10)
+
+        // round down this random number so that it becomes a whole number with Math.floor()
+        // function randoms(min, max){
+        //     var numOfValues = max - min + 1;
+        //     console.log(numOfValues)
+        //     var randomNum = Math.random();
+        //     var randomVal = randomNum * numOfValues;
+        //     var roundedRandomVal = Math.floor(randomVal)
+        //     console.log(roundedRandomVal)
+        // }
+        // randoms(5,10)
+
+        // take the random number we generated and add the minimum number from our range in this case it is a 5.
+        function randoms(min, max){
+            var numOfValues = max - min + 1;
+            console.log(numOfValues)
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal)
+            var finalNum = min + roundedRandomVal;
+            console.log(finalNum)
+        }
+        randoms(5,10)
+    </script>
+</body>
+</html>
