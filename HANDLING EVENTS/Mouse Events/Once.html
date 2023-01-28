@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Halmar keliya ayuuu button shaqaynayaa mar haddii la taabto waa Done.
+    si aan u smaayno arintaas waxaan isticmaalaynaa revoveEventListener -->
+    <button type="button">Click Here</button>
+    <script>
+        let button = document.querySelector("button");
+        function once(){
+            console.log("Done.")
+            button.removeEventListener("click",once)     
+        }
+        button.addEventListener("click",once)
+        
+
+
+
+        // MOUSE OVER
+        // let button = document.querySelector("button");
+        // function once() {
+        // console.log("Done.");
+        // button.removeEventListener("mouseover", once);
+        // }
+        // button.addEventListener("mouseover", once);
+    </script>
+ 
+</body>
+</html>
