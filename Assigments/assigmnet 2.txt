@@ -1,0 +1,12 @@
+Assigment
+       let count=0
+       const message=function()
+       {
+        count=count+1;
+        console.log(count);
+       };
+
+waxaa la rabaa in browserka lagu soo bandhigo.
+
+
+sidoo kale waxaa nalaga rabaa switch oo soo saara 12 bilood

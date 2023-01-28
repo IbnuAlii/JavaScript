@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 5</title>
+     <!-- font link  (poppins)-->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+        body {
+            font-family: "poppins";
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    <input type="text" placeholder="input tag"> <br><br>
+    
+    <script>
+        const counter = document.createElement("h3");
+
+        let i = 0;
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            let tags = document.body.querySelectorAll("input")
+            // loop over all input tags in the page
+            tags.forEach((tag, count) => {
+                // reasign i to the index of the ForEach loop
+                i = count+1
+                // then return i
+                return i;
+            })
+
+            // Display the amount of input tags in the page
+            counter.textContent = "there are ("+i+") input tags in the page";
+        })
+
+        document.body.appendChild(counter);
+
+    </script>
+</body>
+</html>

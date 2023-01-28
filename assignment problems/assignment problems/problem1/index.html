@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+     <!-- font link  (poppins)-->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+        body {
+            font-family: "poppins";
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        // Creating elements
+        const input = document.createElement("input");
+        const btn = document.createElement("button");
+        let final_txt = document.createElement("h3")
+
+        // input event
+        input.addEventListener("keyup", () => {
+            final_txt.textContent = input.value;
+        })
+
+        btn.addEventListener("click", () => {
+            const typing_txt = document.createElement("h3");
+
+            typing_txt.textContent = input.value;
+            document.body.appendChild(typing_txt);
+            input.value = "";
+            final_txt.textContent = "";
+        })
+        
+        btn.textContent = "print"
+        input.placeholder = "Enter text"
+
+        // Adding elements to the body
+        document.body.appendChild(input);
+        document.body.appendChild(btn);
+        document.body.appendChild(final_txt);
+        
+    </script>
+</body>
+</html>

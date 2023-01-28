@@ -1,0 +1,13 @@
+user ka number soogali dheh kadibna cupic ka dhig.
+
+a=50
+b=60
+isku gadi adoo isticmaalaya weel variable seddexaad
+
+let a=50
+let b=60
+document.write("before swapping"+a"<br/>")
+documet.
+let c=a
+let a=b
+let b=c

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 10</title>
+</head>
+<body>
+    <button class="remove_btn">remove</button> <br><br>
+    <img src="delivery.png" alt="">
+    
+    <script>
+        const remove_btn = document.querySelector(".remove_btn");
+
+        remove_btn.addEventListener('click', () => {
+            let images = document.body.querySelectorAll("img");
+            images.forEach((img) => {
+                img.remove();
+            })
+        })
+        
+    </script>
+</body>
+</html>

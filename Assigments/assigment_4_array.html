@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <script>
+        
+    // program 1
+    //===========
+/*
+        // sum of all array numbers 
+       
+        let numbers=[1,2,3,4,5,6,7,8,9];
+        let sum=0;
+        for(let i=0; i<numbers.length; i++){
+            sum=sum+numbers[i]
+        }
+        console.log("THE SUM OF THE ARRAY IS: ",sum)
+      
+
+        /*
+        // sum of all array numbers (using function)
+        const sumArray=function(numbers){
+        let sum=0
+        for(let i=0; i<numbers.length;i=i+1){
+        sum=sum+numbers[i]
+        }
+        console.log(sum)
+        return sum
+        }
+        sumArray([1,2,3,4,5,6,7,8,9]);
+        
+*/
+
+    /*
+    // Program 2
+    //===========
+        
+        // Average
+        let Marks=[92,100,100,96,86,96];
+        let sum=0;
+        for(let i=0; i<Marks.length; i++){
+            sum=sum+Marks[i]
+            average= sum/6;  //or sum/marks.length
+        }
+        //console.log("total marks are: ",sum)
+        console.log("the average is: " , average,"%")
+        */
+        
+    /*
+    // Program 3
+    //===========
+
+        // Min and Max values
+        let values=[92,100,100,96,86,96];
+        console.log("the minimum value is: ",Math.min(...values));
+        console.log("the maximum value is: ",Math.max(...values));
+        */
+
+/*
+    // Program 4
+    //===========
+
+
+        //splice
+        let values=[92,100,100,96,86,96];
+        spliced= values.splice(1,2,567,677);
+        console.log(values)
+        console.log(spliced);
+        */
+
+       // /*
+        let months=["jan","Feb","Mar","Apr","May","June","July"];
+        let spliced=months.splice(2,"oct","sept","nov");
+        console.log(months)
+        console.log(spliced)
+//   */
+    </script>
+</body>
+</html>         
