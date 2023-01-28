@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical iteration concepts</title>
+</head>
+<body>
+    <script>
+
+        /*1)    Write a program to print 0 to 9 using while loop?
+        let count =0
+        document.write("Starting Loop ");
+        while (count<10){
+            document.write("Current Count : " + count + "<br />");
+            count=count+1
+        }
+        document.write("Loop stopped!");
+    
+
+        //2)    Write a program to print 10 to 1 using while loop?
+        let count =10
+        document.write("starting lop: ")
+        while (count>=1){
+            document.write("current loop:  " + count+"<br>")
+            count=count-1
+        }
+        document.write("Loop Stopped")
+        
+
+        //2)    Write a program to print 0 to 5 using do-while loop?
+        let a=0
+        document.write("starting lop: " + "<br>")
+        do{
+            document.write("Current Count :     " + a + "<br>")
+            a=a+1
+        }
+        while(a<=5)
+        document.write("Loop Stopped")
+        
+
+        //4)    Write a program to print 5 to 0 using do-while loop?
+        let tiro=5
+        document.write("starting loop" + "<br>")
+        do{
+            document.write("Current Loop: " + tiro + "<br>")
+            tiro=tiro-1
+        }
+        while(tiro>=0)
+        document.write("Loop finished")
+        
+
+        //5)    Write a program to print 1 to 10 using for loop?
+        document.write("starting loop" + "<br>")
+        for(let a=1; a<=10; a=a+1)
+        {
+        document.write("Current Loop: ", a + "<br>")
+        }
+        document.write("Loop finished")
+        
+
+        //6)    Write a program to print 10 to 1 using for loop?
+        document.write("starting loop" + "<br>")
+        for(let wareeg=10; wareeg>=1; wareeg=wareeg-1)
+        {
+            document.write("Current Loop: ", wareeg + "<br>")
+        }
+        document.write("Loop finished")
+        
+
+        //7)    Write a program to print even numbers from 0 to 100
+        document.write("starting loop" + "<br>")
+        for(let xisaabin=0; xisaabin<=100; xisaabin=xisaabin+2)
+        {
+            document.write("Current Loop: ", xisaabin + "<br>")
+        }
+        document.write("Loop finished")
+        
+
+        //8)    Write a program to print odd numbers from 99 to 1 using while loop?
+        let kisi=99
+        while (kisi>=1)
+        {
+            document.write("current loop: " + kisi + "<br>")
+            kisi=kisi-2
+        }
+        document.write("Loop finished")
+        
+
+        //9)    Write a program to calculate (2 to the 10th power)?
+        let count=0
+        let result=1
+        while(count<=10)
+        {
+            result=result*2;
+            count=count+1;
+        }
+        document.write("thre result of 2 to the 10th power is = " + result + "<br>")
+        
+
+        //10)   Write a program to print Sum of N numbers using for loop?
+        let sum=0
+        Num=Number(prompt("Enter Any Number: "))
+        for(let count=1; count<=Num; count=count+1)
+        {
+            sum=sum+count
+        }
+        document.write(`the sum of this Number ${Num} is : ${sum}`)
+        
+
+        //11)   Write a program to print till N odd Numbers using while loop?
+        let sum=0,count=1;
+        let Num=Number(prompt("Enter Any Number: "))
+        while(count<=Num)
+        {
+            document.write(`Odd Number is: ${count}` + "<br>");
+            count=count+2
+        }
+        
+
+        //12)   Write a program to print till N even Numbers using do while loop?
+        let wadar=0,tiro=0;
+        Num=Number(prompt("Enter Any Number"))
+        do{
+            document.write(`Even Numbers is ${tiro}` + "<br>");
+            tiro=tiro+2;
+        }
+        while(tiro<=Num)
+        
+
+        //13)   The following example illustrates the use of a break statement with a while loop:
+        let a=0;
+        while(a<20)
+        {
+            if (a==5)
+            {
+                break;
+            }
+        a=a+1;
+        document.write(a + "<br>")
+        }
+        
+
+        //14)   The following example illustrates the use of a Continue statement with a while loop:
+        let x = 1;
+        while (x < 10)
+        {
+        x = x + 1;
+        if (x == 5){ 
+        continue; // skill rest of the loop body
+        }
+        document.write( x + "<br />");
+        }
+        */
+
+        //15)   Using JavaScript switch statement to get the day of the week
+        let day =Number(prompt("enter a number: "));
+        let dayName;
+        switch(day)
+        { 
+        case 1:
+        dayName="Sabti";
+        break;
+        case 2:
+        dayName="Axad";
+        break;
+        case 3:
+        dayName="Isnin";
+        break;
+        case 4:
+        dayName="Talaado";
+        break;
+        case 5:
+        dayName="Arbaco";
+        break;
+        case 6:
+        dayName="Khamis";
+        break;
+        case 7:
+        dayName="Jimco";
+        break;
+        default :
+        dayName="Invalid Day";
+        break;
+        }document.write("Manta waa ",dayName);
+    </script>
+</body>
+</html>
