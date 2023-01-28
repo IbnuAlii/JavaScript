@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt with if</title>
+</head>
+<body>
+<script>
+    //prompt
+    console.log(prompt("ENTER A PASSCODE"));
+
+    //cupic number
+    let theNumber=Number(prompt("Soo geli NUmber"));
+        document.write("Numberka aad soo galisay seddex laabkiisu waa " + theNumber*theNumber*theNumber);
+
+    //prompt with if condition
+    let theNumber=Number(prompt("enter a number"));
+        if(!Number.isNaN(theNumber)) {
+            document.write("your number is the square root of " + theNumber*theNumber)
+        }
+
+
+    // prompt with else condition
+    let theNumber=Number(prompt("enter a number"));
+        if(!Number.isNaN(theNumber)) {
+            document.write("your number is the square root of " + theNumber*theNumber)
+        }
+        else{
+            document.write("waxa aad soo galisay maahan Number")
+        }
+
+    //prompt with conditions: if, else , else if 
+    let num=Number(prompt("Enter a number: "));
+    if (num<10) {
+        document.write("Small");
+    }
+    else if (num<100){
+        document.write("Medium");
+    }
+    else {
+        document.write("Large");
+    }
+</script>
+</body>
+</html>

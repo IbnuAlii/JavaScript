@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIJAABO</title>
+</head>
+<body>
+    <button onclick="Decrement()">Decrement</button> <br>
+    <span id="valueDisplay" style="font-size:60px;">0</span> <br>
+    <button onclick="increment()">increment</button>
+
+    <script>
+        let count=0;
+        const valueDisplay=document.getElementById("valueDisplay")
+
+        function increment(){
+            count++;
+            valueDisplay.innerHTML=count
+        }
+
+        function Decrement(){
+            count--;
+            valueDisplay.innerHTML=count
+        }
+    </script>
+</body>
+</html>

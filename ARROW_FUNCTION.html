@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROW FUNCTION</title>
+</head>
+<body>
+    <script>
+        /*
+        // no parameter
+        const message=()=>{
+            console.log("welcome to arrow")
+        }
+        message()
+        
+
+        // with parameter
+         const message=(name)=>{
+            console.log("welcome to arrow",name);
+        }
+        message("ali")
+        message("said")
+        message("farah")
+        
+        // return type
+        const add=(n1,n2)=> {
+            let result=n1+n2;
+            return result
+        }
+        console.log(add(2,3))
+        
+
+        
+        const add=(n1,n2)=> {
+            let result=n1+n2;
+            return result
+        }
+        let num1=Number(prompt("Enter 1st number"))
+        let num2=Number(prompt("Enter 2nd number"))
+        console.log(add(num1,num2))
+        
+
+        //using is NaN 
+        const add=(n1,n2)=> {
+            let result=n1+n2;
+            return result
+        }
+        let num1=Number(prompt("Enter 1st number"))
+        let num2=Number(prompt("Enter 2nd number"))
+        if(!((isNaN(num1) && isNaN(num2))))
+        console.log(add(num1,num2))
+        
+        
+        const power=(base,exponent)=>{
+            let result=1;
+            for (let count=0; count<exponent;count++){
+                result=result*base
+            }
+            return result
+        }
+        console.log(power(2,3))
+        
+
+        const power=(base,exponent)=>{
+            let result=1;
+            for (let count=0; count<exponent;count++){
+                result=result*base
+            }
+            return result
+        }
+        let num1=Number(prompt("Enter 1st number"))
+        let num2=Number(prompt("Enter 2nd number"))
+        console.log(power(num1,num2))
+        
+
+        // with out using loop
+        const power=(base,exponent)=>{
+            let result=base**exponent
+            return result
+        }
+        let num1=Number(prompt("Enter base number"))
+        let num2=Number(prompt("Enter power number"))
+        console.log(power(num1,num2))
+        
+
+        // optional arguments
+        function minus(a, b) {
+        if (b === undefined) return -a;
+        else return a - b;
+        }
+        console.log(minus(10));
+        console.log(minus(10, 5));
+        
+
+        // default values exponent
+        function power(base, exponent = 2) {
+        let result = 1;
+        for (let count = 0; count < exponent; count++) {
+        result *= base;
+        }
+        return result;
+        }
+        console.log(power(4));
+        console.log(power(2, 6));
+
+        // Closure
+        function makeAdder(x) {
+        return function(y) {
+        return x + y;
+        };
+        }
+        var add5 = makeAdder(5);
+        var add10 = makeAdder(10);
+        console.log(add5(2));
+
+
+        //
+        function makeAdder() {
+            let x=10
+        return function(y) {
+        return x + y;
+        };
+        }
+        var add5 = makeAdder();
+        var add10 = makeAdder(10);
+        console.log(add5(3));
+
+
+        //array
+        let marks=[90,80,77,87,58,97]
+        console.log(marks[true*true])
+
+
+        let weeks=['sat','sun','mon','tue','wed','thur','fri']
+        console.log(2*2)
+
+
+        // iskajir waa error
+        let weeks=['sat','sun','mon','tue','wed','thur','fri']
+        console.log(True*False)  // waayo true and false waa inay lowercase ahadaan
+
+        // using concat()
+        let str="welcome"
+        let str1=" with open hands"
+        let str2=str.concat(str1)
+        console.log(str2)
+
+
+        let str='sidee tahay walaalo?'
+        document.write('the length of string is: ',str.length);
+       
+        
+       
+         // trim() waxaa lagu jaraa spaceka ka
+         let str1='      welcome      '
+         console.log(str1.length);
+         console.log(str1.trim().length);
+
+         // trimStart or trimLeft waa same waxaana lagu jaraa spaceka ka hore.
+         let str1='      welcome      '
+         console.log(str1.length);
+         console.log(str1.trimStart().length);
+        
+
+         // trimEnd or trimRight waxaa lagu jaraa spaceka ka dambe.
+         let str1='  welcome    '
+         console.log(str1.length);
+         console.log(str1.trimEnd().length);
+        
+
+        // replace method
+       let str='hello gaays'
+       console.log(str)
+       console.log(str.replace("gaays","guys"))
+       console.log(str.replace(str,"seelayahay walaalayaal"))
+        
+       
+        // Substring Method 
+        let str='jaallayaal galab wanaagsan';
+        console.log(str.substring(0,10));// index ka laga bilaabonilaa index ka lagu ekeynayo
+        
+
+        /* Substr Method   
+        (substring iyo substr waxaa u dhexeya farqi ah , 
+        substring waxay soo parameter ahaan loogu baasa indexes oo kala ah substring(startIndex,endIndex))
+        halka substr ay parameter ahaan u qaadato index iyo number of characters 
+        oo micnahedu yahay ilaa inta number ee aad rabto in laguu daabaco sida: 
+        subsrt(startIndex,numberOfCharacters)
+        
+        // substr example
+        let str='jaallayaal galab wanaagsan';
+        console.log(str.substr(0,14));// index ka laga bilaabonilaa index ka lagu ekeynayo
+        
+
+        // split and join 
+        let sentence="galab wanaagsan all friends";
+        let words=sentence.split(" ")
+        console.log(words);
+        console.log(words.join(". "));
+        
+
+        //repeat.
+        console.log("Mohamedow\n".repeat(10));
+
+
+        //length
+        console.log("Sabti".length);
+        console.log("Sabti"[2]);
+        */
+
+        let doh='Doh';
+        console.log(typeof doh.toUpperCase);
+        console.log(doh.toUpperCase());
+    </script>
+</body>
+</html>

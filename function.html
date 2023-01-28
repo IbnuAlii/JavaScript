@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        /* program 1.
+        function message()
+        {
+            document.write("take care!")
+        }
+        message();
+        
+
+        // programv 2
+        function message(name)
+        {
+            document.write("Welcom ",name);
+        }
+        message("Ali")
+        message("Ahmed")
+        
+
+
+         //program 3
+       let a=Number(prompt("enter any number: "))
+       let b=Number(prompt("enter any number: "))
+        function sum(a,b)
+        {
+            let result= a+b;
+            return result
+        }
+        console.log(sum(a,b))
+
+
+        //program 4
+       let a=Number(prompt("enter any number: "))
+       let b=Number(prompt("enter any number: "))
+        function multipliction(a,b)
+        {
+            let result= a*b;
+            return result
+        }
+        console.log(multipliction(a,b))
+        
+
+
+        // Another way  called ==>(function expression)
+        const message=function()
+        {
+            console.log("welcome")
+        }
+        message()
+        
+
+        // sample 2 using return value
+        const tiro=function(a)
+        {
+            return a*a;
+        }
+        console.log(tiro(3));
+        tiro()
+        
+
+
+        const power = function(base, exponent) {
+        let result = 1;
+        for (let count = 0; count < exponent; count++) {
+        result *= base;
+        }
+        return result;
+        };
+        console.log(power(2, 10));
+        
+
+
+        // using with button
+       const message=function()
+       {
+        console.log("welcome");
+       }
+       
+
+
+       let count=0
+       const message=function()
+       {
+        count=count+1;
+        console.log(count);
+       };
+       
+
+       const message=function(x)
+       {
+        let result=x*x;
+        console.log(result);
+       }
+       
+
+
+       // hosting   ; functionka intaadaa abuuran ka hor inaad wacato
+       // wuxuu shaqaynaa keliya marka lajoogo function declaration ee ma shaqaynayo during function expression
+       message()
+       function message()
+       {
+        console.log("welcome")
+       }
+       
+
+       // waxaan isku daraynaa local value iyo 
+       let x=10;
+       if (true)
+       {
+        let y=20;
+        var z=30;   // var waxay awood u leedahay scopeka inay ka dhex gudubto sida global oo kale ayaan u adeegsan karnaa
+        console.log(x+y+z)
+       }
+       */
+
+       //Functions as values
+       function square(x) {return x*x;}
+       var s=square;
+       console.log(square(4))
+       console.log(s(3)) // waa badali kartaa qiimaha
+
+    </script>
+
+    <!--button-->
+    <input type="submit" value="Save" onclick="message(4)">
+</body>
+</html>
